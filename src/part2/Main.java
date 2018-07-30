@@ -86,6 +86,45 @@ public class Main {
         }
 
 
+        Fighter fighter1 = new Fighter();
+        fighter1.name = "Sub-zero";
+        fighter1.power = 100;
+
+        Fighter fighter2 = new Fighter();
+        fighter2.name = "scorpion";
+        fighter2.power = 110;
+
+
+        System.out.println("choose your player");
+        String choosenPlayer = "";
+        Fighter choosenFighter;
+        if (choosenPlayer.equals("a")) {
+            choosenFighter = fighter1;
+        } else if (choosenPlayer.equals("b")) {
+            choosenFighter = fighter2;
+        } else {
+            choosenFighter = null;
+        }
+
+        System.out.println("you choose " + choosenFighter.name);
+
+
+        System.out.println("choose your player again");
+
+        String fighterThatIChoose = "sz";
+        Fighter fighterX;
+        switch (fighterThatIChoose) {
+            case "sz":
+                fighterX = fighter1;
+                break;
+            case "ss":
+                fighterX = fighter2;
+                break;
+            default:
+                fighterX = null;
+        }
+
+        System.out.println("your fighter is " + fighterX.name);
 
 
     }
