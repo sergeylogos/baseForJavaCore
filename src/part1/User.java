@@ -10,7 +10,7 @@ public class User {
     double weight; //от -4.9e-324 до 1.7e+308
     String name;
     boolean isActivated;
-    //    char uniqueSymbol;
+    //    char uniqueSymbol = 63;
     char uniqueSymbol; //беззнаковое целое число, представляющее собой символ UTF-16 (буквы и цифры)
 
 
